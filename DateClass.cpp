@@ -1,8 +1,6 @@
-// DateClass_Assignment1.cpp : Defines the entry point for the console application.
-//
+#include <iostream>
 
 
-#include "stdafx.h"
 class AndreDate
 {
 private:
@@ -61,5 +59,18 @@ public:
 
 int main()
 {
+    //static object
+    AndreDate MyDate;
+
+    //setup MyDate;
+    MyDate.SetDay(28);
+    MyDate.SetMonth(6);
+    MyDate.setYear(1990);
+
+    cout << "Day   :" << MyDate.Getday()<<endl;
+    cout << "Month :" << MyDate.GetMonth()<< endl;
+    cout << "Year  :" << MyDate.GetYear() << endl;
+
+
 	return 0;
 }
