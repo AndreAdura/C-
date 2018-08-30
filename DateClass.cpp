@@ -1,13 +1,15 @@
+#include "stdafx.h"
 #include <iostream>
+using namespace std;
 
 
 class AndreDate
 {
 private:
 	//step 1 - create your data members
-	int * Cday;
-	int * Cmonth;
-	int * Cyear;
+	int  Cday;
+	int  Cmonth;
+	int  Cyear;
 
 
 	//step 2 initialize
@@ -22,34 +24,37 @@ public:
 
 	//step 3 Access functions
 
-	int * Getday()
+	int  Getday()
 	{
 		return Cday;
 	}
 
-	int SetDay(int * Vday)
+	int SetDay(int  Vday)
 	{
 		Cday = Vday;
+		return Cday;
 	}
 
-	int * GetMonth()
+	int  GetMonth()
 	{
 		return Cmonth;
 	}
 
-	int SetMonth(int * Vmonth)
+	int SetMonth(int  Vmonth)
 	{
 		Cmonth = Vmonth;
+		return Cmonth;
 	}
 
-	int * GetYear()
+	int  GetYear()
 	{
 		return Cyear;
 	}
 
-	int setYear(int * Vyear)
+	int SetYear(int  Vyear)
 	{
 		Cyear = Vyear;
+		return Cyear;
 	}
 
 
@@ -59,17 +64,17 @@ public:
 
 int main()
 {
-    //static object
-    AndreDate MyDate;
+	//static object
+	AndreDate MyDate;
 
-    //setup MyDate;
-    MyDate.SetDay(28);
-    MyDate.SetMonth(6);
-    MyDate.setYear(1990);
+	//setup MyDate;
+	MyDate.SetDay(28); 
+	MyDate.SetMonth(6);
+	MyDate.SetYear(1990);
 
-    cout << "Day   :" << MyDate.Getday()<<endl;
-    cout << "Month :" << MyDate.GetMonth()<< endl;
-    cout << "Year  :" << MyDate.GetYear() << endl;
+	cout << "Day   :" << MyDate.Getday() << endl;
+	cout << "Month :" << MyDate.GetMonth() << endl;
+	cout << "Year  :" << MyDate.GetYear() << endl;
 
 
 	return 0;
