@@ -9,4 +9,19 @@
      
  -----------------------------------------------------------------------------------------------------------------
  
+ ARRAY OF STRINGS USING POINTERS:
  
+ #include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main()
+{
+
+const char *MyString [3] = {"element1", "element2","element3"};
+
+cout << MyString[0] << "\n" << MyString[1]<< "\n"  << MyString[2]<< endl;
+
+    return 0;
+}
+-------------------------------------------------------------------------------------------------
