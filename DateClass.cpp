@@ -32,6 +32,7 @@ public:
 	int SetDay(int  Vday)
 	{
 		Cday = Vday;
+
 		return Cday;
 	}
 
@@ -68,13 +69,36 @@ int main()
 	AndreDate MyDate;
 
 	//setup MyDate;
-	MyDate.SetDay(28); 
+	MyDate.SetDay(28);
 	MyDate.SetMonth(6);
 	MyDate.SetYear(1990);
 
-	cout << "Day   :" << MyDate.Getday() << endl;
-	cout << "Month :" << MyDate.GetMonth() << endl;
-	cout << "Year  :" << MyDate.GetYear() << endl;
+	if (MyDate.Getday() <= 0 || MyDate.Getday() > 32) {
+		cout << "Invalid Day - The range is from 1 to 31" << endl;
+	}
+	else {
+		cout << "Day   :" << MyDate.Getday() << endl;
+	}
+
+
+
+	if (MyDate.GetMonth() <= 0 || MyDate.GetMonth() > 12) {
+		cout << "Invalid Month - The range is from 1 to 12" << endl;
+	}
+	else {
+		cout << "Month :" << MyDate.GetMonth() << endl;
+	}
+
+
+
+	if (MyDate.GetYear() <= 0 || MyDate.GetYear() > 2050) {
+		cout << "Invalid Year - The range is from 1 to 2050" << endl;
+	}
+	else {
+		cout << "Year  :" << MyDate.GetYear() << endl;
+	}
+
+	
 
 
 	return 0;
