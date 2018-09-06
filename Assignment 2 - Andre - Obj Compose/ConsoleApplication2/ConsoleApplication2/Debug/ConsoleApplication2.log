@@ -1,0 +1,9 @@
+﻿  MyDateFunctions.cpp
+c:\users\andre.adura\documents\visual studio 2017\projects\consoleapplication2\consoleapplication2\mydate.h(12): warning C4200: nonstandard extension used: zero-sized array in struct/union
+  c:\users\andre.adura\documents\visual studio 2017\projects\consoleapplication2\consoleapplication2\mydate.h(12): note: This member will be ignored by a defaulted constructor or copy/move assignment operator
+  ConsoleApplication2.cpp
+c:\users\andre.adura\documents\visual studio 2017\projects\consoleapplication2\consoleapplication2\mydate.h(12): warning C4200: nonstandard extension used: zero-sized array in struct/union
+  c:\users\andre.adura\documents\visual studio 2017\projects\consoleapplication2\consoleapplication2\mydate.h(12): note: This member will be ignored by a defaulted constructor or copy/move assignment operator
+  Generating Code...
+  ConsoleApplication2.vcxproj -> c:\users\andre.adura\documents\visual studio 2017\Projects\ConsoleApplication2\Debug\ConsoleApplication2.exe
+  ConsoleApplication2.vcxproj -> c:\users\andre.adura\documents\visual studio 2017\Projects\ConsoleApplication2\Debug\ConsoleApplication2.pdb (Partial PDB)
