@@ -1,0 +1,53 @@
+#include "stdafx.h"
+#include <iostream>
+#include "Engine.h"
+#include "Car.h"
+#include "Plane.h"
+#include "Bike.h"
+
+using namespace std;
+
+int main()
+{
+	Car * aCar = new Car("6 Series", 2018);
+	cout << aCar->ShowMyInfo() << endl;
+
+
+	Plane * aplane = new Plane(2000, "Tail dragger");
+	cout << aplane->ShowMyInfo() << endl;
+
+
+
+	Bike * aBike = new Bike("Gray", "Royal", "Poseidon", 2015);
+	cout << aShip->ShowMyInfo() << endl;
+
+
+
+
+
+
+	// Create a Engine* array 
+
+	array[Engine*] * DynamicBound = new array[Engine*](6);
+	DynamicBound[0] = aCar;
+	DynamicBound[3] = aplane;
+	DynamicBound[6] = aBike;
+
+
+
+
+
+	for (int i = 0; i <= 8; i++)
+	{
+
+		cout << (DynamicBound[i]->ShowMyInfo() << endl;
+	}
+
+
+
+
+
+
+
+	return 0;
+}
