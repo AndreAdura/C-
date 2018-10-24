@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include <iostream>
 #include <vector>
+#include<string>
 
 using namespace std;
 
@@ -69,12 +70,92 @@ int main()
 		main();
 		break;
 
+	case 3:
+		int vectorPosition;
+		cout << "Please insert a number to be included in the Vector" << endl;
+		cin >> vectorElement;
+
+		cout << "Please inser the position that you want to include this number" << endl;
+		cin >> vectorPosition;
+
+		if (vectorPosition > myVector.size())
+		{
+			cout << "This function is to add numbers in between, to add at the end please use the option 2" << endl;
+				main();
+		}
+		else
+		{
+			myVector.at(vectorPosition) = vectorElement;
+		}
+		
+
+		cout << "The Vector Elements are:" << endl;
+
+		//PRINTING THE VECTOR
+		for (int & i : myVector)
+		{
+
+			cout << i << ' ' << endl;
+		}
+
+		main();
+		break;
+
+
+	case 4:
+
+		cout << "Print the Vector" << endl;
+
+		for (int & i : myVector)
+		{
+			cout << i << endl;
+		}
+
+		break;
+
+	case 5:
+
+		cout << myVector.size() << endl;
+
+		break;
+
+	case 6:
+		int index;
+		cout << "Choose the element index do you want to display" << endl;
+		cin >> index;
+
+
+
+		
+
+		cout << myVector[index] << endl; 
+
 		break;
 
 	default:
+
+	case 7:
+
+		int index2;
+		cout << "Choose the element index do you want to display" << endl;
+		cin >> index2;
+
+
+
+
+
+		cout << myVector[index2] << endl;
+
+		break;
+
+		// *********************** END OF VECTORS PARTS ******************************
+
+
+
 		return 0;
 		break;
 	}
 	
     return 0;
 }
+
