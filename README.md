@@ -25,3 +25,12 @@ cout << MyString[0] << "\n" << MyString[1]<< "\n"  << MyString[2]<< endl;
     return 0;
 }
 -------------------------------------------------------------------------------------------------
+
+PRINTING WITH FOR LOOP 
+
+//PRINTING THE VECTOR
+		for (int & i : myVector)
+		{
+
+			cout << i << ' ' << endl;
+		}
